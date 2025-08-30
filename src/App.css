@@ -1,0 +1,137 @@
+*{
+  text-align: center;
+  justify-content: center;
+}
+/* Background */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  margin: 0;
+  padding: 40px;
+}
+
+/* Centered card */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.stats strong {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Input form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.task-form input:focus {
+  border-color: #2575fc;
+}
+
+.add-btn {
+  background: #2575fc;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #1e63d3;
+}
+
+/* Task list */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#171717;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.task-item.completed {
+  background: #e6f4ea;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Buttons */
+.task-buttons button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.complete-btn {
+  background: #28a745;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #218838;
+}
+
+.undo-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.undo-btn:hover {
+  background: #5a6268;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b52a37;
+}
